@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Portfolio Sitesi",
+        "image": "https://picsum.photos/400/200?1",
+        "description": "Kişisel portfolio web sitesi"
+    },
+    {
+        "id": 2,
+        "title": "E-Ticaret",
+        "image": "https://picsum.photos/400/200?2",
+        "description": "Online satış platformu"
+    }
+]
