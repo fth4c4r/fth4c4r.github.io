@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Portfolio Sitesi",
+        "image": "images/proje1.jpg",
+        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
+        "url": "https://github.com/kullanici/portfolio"
+    },
+    {
+        "title": "E-Ticaret Projesi",
+        "image": "images/proje2.jpg",
+        "description": "Modern e-ticaret arayüzü çalışması.",
+        "url": "https://github.com/kullanici/ecommerce"
+    }
+]
