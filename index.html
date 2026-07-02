@@ -1,143 +1,31 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Flutter geliştirici portföy sitesi" />
-    <title>Portföy</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">İçeriğe atla</a>
-
-    <header class="site-header" id="site-header">
-      <div class="container nav">
-        <a class="logo" href="#top" aria-label="Ana sayfa"><span id="siteLogo">Portfolio</span></a>
-
-        <button class="nav-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav class="nav-links" aria-label="Ana menü">
-          <a href="#about" data-section="about" id="navAbout">Hakkımda</a>
-          <a href="#skills" data-section="skills" id="navSkills">Yetenekler</a>
-          <a href="#projects" data-section="projects" id="navProjects">Projeler</a>
-          <a href="#contact" data-section="contact" id="navContact">İletişim</a>
-        </nav>
-
-        <div class="lang-switch" aria-label="Dil seçimi">
-          <a href="#" data-lang="tr" class="active">TR</a>
-          <a href="#" data-lang="en">EN</a>
-        </div>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section class="hero" id="top" aria-labelledby="hero-heading">
-        <div class="container hero-inner">
-          <div class="hero-badge reveal">
-            <span class="hero-badge-dot" aria-hidden="true"></span>
-            <span id="heroBadge">Yeni projelere açık</span>
-          </div>
-
-          <p class="hero-greeting reveal reveal-delay-1" id="heroGreeting">Merhaba, ben</p>
-          <h1 class="hero-name reveal reveal-delay-2" id="heroHeading">Adınız Soyadınız</h1>
-          <h2 class="hero-role reveal reveal-delay-3" id="heroRole">Bilgisayar Mühendisi &amp; Flutter Geliştirici</h2>
-          <p class="hero-desc reveal reveal-delay-4" id="heroDesc">iOS ve Android için performanslı, şık ve kullanıcı dostu mobil uygulamalar geliştiriyorum.</p>
-
-          <div class="hero-actions reveal reveal-delay-4">
-            <a href="#projects" class="btn btn-primary" id="heroCta">Projelerimi Gör</a>
-            <a href="#contact" class="btn btn-outline" id="heroContact">İletişime Geç</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-heading">
-        <div class="container">
-          <div class="about-layout">
-            <div>
-              <span class="section-label reveal" id="aboutLabel">Hakkımda</span>
-              <h2 class="section-title reveal" id="aboutHeading">Hakkımda</h2>
-              <p class="about-text reveal reveal-delay-1" id="aboutText"></p>
-
-              <div class="about-stats">
-                <div class="stat-card reveal reveal-delay-1">
-                  <div class="stat-number">3+</div>
-                  <div class="stat-label" id="statExp">Yıl Deneyim</div>
-                </div>
-                <div class="stat-card reveal reveal-delay-2">
-                  <div class="stat-number">8+</div>
-                  <div class="stat-label" id="statProjects">Tamamlanan Proje</div>
-                </div>
-                <div class="stat-card reveal reveal-delay-3">
-                  <div class="stat-number">10+</div>
-                  <div class="stat-label" id="statTech">Teknoloji</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="about-card reveal reveal-delay-2">
-              <div class="about-card-title" id="quickInfoTitle">Hızlı Bilgi</div>
-              <ul class="about-card-list" id="quickInfoList" role="list"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
-        <div class="container">
-          <span class="section-label reveal" id="skillsLabel">Uzmanlık Alanları</span>
-          <h2 class="section-title reveal" id="skillsHeading">Yeteneklerim</h2>
-          <p class="section-subtitle reveal reveal-delay-1" id="skillsSubtitle"></p>
-
-          <div class="skills-layout" id="skillsList"></div>
-        </div>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-heading">
-        <div class="container">
-          <span class="section-label reveal" id="projectsLabel">Öne Çıkan Çalışmalar</span>
-          <h2 class="section-title reveal" id="projectsHeading">Projelerim</h2>
-          <p class="section-subtitle reveal reveal-delay-1" id="projectsSubtitle"></p>
-
-          <div class="projects-grid" id="projectsList"></div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="certificates" aria-labelledby="certs-heading">
-        <div class="container">
-          <span class="section-label reveal" id="certsLabel">Başarılar</span>
-          <h2 class="section-title reveal" id="certsHeading">Sertifikalar ve Eğitimler</h2>
-          <p class="section-subtitle reveal reveal-delay-1" id="certsSubtitle"></p>
-
-          <div class="projects-grid" id="certificatesList"></div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
-        <div class="container">
-          <div class="contact-layout">
-            <div class="contact-info">
-              <span class="section-label reveal" id="contactLabel">İletişim</span>
-              <h2 class="section-title reveal" id="contactHeading">İletişim</h2>
-              <p class="contact-text reveal reveal-delay-1" id="contactText"></p>
-
-              <div class="contact-social reveal reveal-delay-2" id="socialLinks"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer" style="padding: 32px 0 48px; border-top: 1px solid var(--border);">
-      <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; color:var(--muted);">
-        <p id="footerText">Tüm hakları saklıdır.</p>
-        <p>GitHub Pages • JSON</p>
-      </div>
-    </footer>
-
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/portfolio.js"></script>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+body{margin:0;background:#0f172a;color:white;font-family:Arial}
+header{text-align:center;padding:80px 20px}
+h1{color:#38bdf8}
+#projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:30px;
+}
+.card{
+background:#1e293b;
+border-radius:12px;
+overflow:hidden;
+}
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+.card-content{
+padding:15px;
+}
+</style>
+</head>
