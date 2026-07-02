@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<style>
+body{font-family:Arial;padding:30px;background:#111;color:white}
+input,textarea{width:100%;padding:10px;margin:8px 0}
+button{padding:10px 20px;background:#0ea5e9;color:white;border:none}
+</style>
+</head>
+<body>
+<h1>Proje Ekle</h1>
+<input id="title" placeholder="Proje Adı">
+<input id="image" placeholder="Resim URL">
+<textarea id="description" placeholder="Açıklama"></textarea>
+<button onclick="saveProject()">Kaydet</button>
+
+<script type="module">
+import { db } from './firebase-config.js';
+import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js';
+
+window.saveProject = async () => {
+  await addDoc(collection(db, 'projects'), {
+    title: document.getElementById('title').value,
+    image: document.getElementById('image').value,
+    description: document.getElementById('description').value,
+    createdAt: new Date()
+  });
+
+  alert('Proje kaydedildi');
+};
+</script>
+</body>
+</html>
