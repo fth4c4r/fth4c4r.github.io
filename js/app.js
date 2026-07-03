@@ -1,4 +1,4 @@
-fetch("data/projects.json")
+fetch("data/project.json")
 .then(response => response.json())
 .then(projects => {
 
