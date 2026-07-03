@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Portfolio Sitesi",
+        "image": "images/project1.jpeg",
+        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
+        "url": "https://github.com/kullanici/portfolio"
+    },
+    {
+        "title": "E-Ticaret Projesi",
+        "image": "images/project2.jpg",
+        "description": "Modern e-ticaret arayüzü çalışması.",
+        "url": "https://github.com/kullanici/ecommerce"
+    },    {
+        "title": "Portfolio Sitesi",
+        "image": "images/project1.jpeg",
+        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
+        "url": "https://github.com/kullanici/portfolio"
+    },
+    {
+        "title": "E-Ticaret Projesi",
+        "image": "images/project2.jpg",
+        "description": "Modern e-ticaret arayüzü çalışması.",
+        "url": "https://github.com/kullanici/ecommerce"
+    },
+        {
+        "title": "Portfolio Sitesi",
+        "image": "images/project1.jpeg",
+        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
+        "url": "https://github.com/kullanici/portfolio"
+    },
+    {
+        "title": "E-Ticaret Projesi",
+        "image": "images/project2.jpg",
+        "description": "Modern e-ticaret arayüzü çalışması.",
+        "url": "https://github.com/kullanici/ecommerce"
+    },    {
+        "title": "Portfolio Sitesi",
+        "image": "images/project1.jpeg",
+        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
+        "url": "https://github.com/kullanici/portfolio"
+    },
+    {
+        "title": "E-Ticaret Projesi",
+        "image": "images/project2.jpg",
+        "description": "Modern e-ticaret arayüzü çalışması.",
+        "url": "https://github.com/kullanici/ecommerce"
+    }
+]
