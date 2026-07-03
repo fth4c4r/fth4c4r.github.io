@@ -27,8 +27,7 @@ fetch("data/projects.json")
 
             </div>
 
-        </div>
-        `;
+        </div>`;
     });
 })
 .catch(error => {
