@@ -1,28 +1,14 @@
 [
     {
-        "title": "İnsanlık",
-        "description": "%100"
+        "title": "Algoritma",
+        "description": "%60"
        
     },
      {
         "title": "Flutter",
-        "description": "%75"
+        "description": "%65"
        
     },
-    {
-        "title": "React",
-        "description": "%70"
-       
-    },
-    {
-        "title": "Node.js",
-        "description": "%60"
-       
-    },
-    {
-        "title": "Python",
-        "description": "%50"
-       
-    }
+
     
 ]
