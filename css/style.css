@@ -12,6 +12,8 @@ html{
 body{
     background:#0f172a;
     color:#fff;
+    width:100%;
+    overflow-x:hidden; /* Yatayda kaydırma çubuğu çıkmasını ve ekranın sağa doğru taşmasını engeller */
 }
 
 nav{
@@ -41,6 +43,11 @@ nav ul{
 nav a{
     text-decoration:none;
     color:white;
+    transition: color 0.2s;
+}
+
+nav a:hover{
+    color:#38bdf8;
 }
 
 .hero{
@@ -48,24 +55,35 @@ nav a{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    padding:100px 10%;
-    flex-wrap:wrap;
+    padding:120px 10% 80px; /* Üst boşluk fixed menünün altında kalmaması için artırıldı */
+    gap: 40px;
 }
 
 .hero img{
     width:300px;
+    height:300px;
+    object-fit: cover;
     border-radius:50%;
     border:5px solid #38bdf8;
+    flex-shrink: 0;
+}
+
+.hero-content{
+    flex: 1;
+    min-width: 300px;
 }
 
 .hero-content h1{
     font-size:3rem;
     margin-bottom:20px;
+    line-height: 1.2;
 }
 
 .hero-content p{
     margin-bottom:25px;
     color:#cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .btn{
@@ -75,6 +93,12 @@ nav a{
     text-decoration:none;
     padding:12px 22px;
     border-radius:8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
 }
 
 .section-header{
@@ -92,7 +116,7 @@ nav a{
 
 .about-grid{
     display:grid;
-    grid-template-columns:repeat(2,minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Sabit 2 sütun yerine esnek ve kırılgan olmayan yapı */
     gap:30px;
     align-items:start;
 }
@@ -105,7 +129,7 @@ nav a{
 
 .about-stats{
     display:grid;
-    grid-template-columns:repeat(3,minmax(120px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Küçük ekranlarda otomatik alt alta geçer */
     gap:20px;
     margin-top:35px;
 }
@@ -182,7 +206,6 @@ nav a{
     gap:20px;
 }
 
-
 .skill-item{
     background:rgba(15,23,42,.9);
     border:1px solid rgba(255,255,255,.08);
@@ -222,7 +245,7 @@ nav a{
 
 .achievement-grid{
     display:grid;
-    grid-template-columns:repeat(3,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Mobilde alt alta gelmesi için güncellendi */
     gap:24px;
     margin-top:30px;
 }
@@ -287,7 +310,7 @@ section h2{
 
 .projects{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); /* Çok küçük kart görünümünü engellemek için minimum sınır 280px yapıldı */
     gap:25px;
     max-width:1200px;
     margin:0 auto;
@@ -354,29 +377,101 @@ section h2{
     text-align:center;
 }
 
-@media(max-width:768px){
 
+/* ==========================================================================
+   YENİLENMİŞ RESPONSIVE KATMANI (MEDIA QUERIES)
+   ========================================================================== */
+
+/* 1. TABLET VE KÜÇÜK DIZÜSTÜ BİLGİSAYARLAR (Maksimum 1024px) */
+@media(max-width: 1024px) {
+    nav {
+        padding: 20px 5%;
+    }
+    
+    section {
+        padding: 60px 5%;
+    }
+    
+    .hero {
+        padding: 120px 5% 60px;
+    }
+}
+
+/* 2. MOBİL CİHAZLAR (Maksimum 768px) */
+@media(max-width:768px){
     nav{
         flex-direction:column;
         gap:15px;
+        padding: 15px 20px;
+        position: static; /* Mobilde sayfa üstüne sabit kalıp içeriği kapatmaması için esnetildi */
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero{
         text-align:center;
+        flex-direction: column-reverse; /* Mobilde önce yazı, sonra resim görünmesi için ideal dizilim */
+        min-height: auto;
+        padding-top: 40px;
     }
 
     .hero img{
-        margin-top:40px;
+        width: 240px;
+        height: 240px;
+        margin-top: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr; /* Mobilde hakkımda yazısı ve info kartı alt alta gelir */
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr); /* İstatistikler mobilde 2'li düzen olur */
     }
 
     .projects{
-        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-        gap:15px;
-        padding:0 5%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap:20px;
     }
 
     .project-card img{
-        height:150px;
+        height:160px;
+    }
+}
+
+/* 3. KÜÇÜK MOBİL CİHAZLAR (Maksimum 480px) */
+@media(max-width:480px){
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr; /* Çok küçük ekranlarda istatistikler tek sütun */
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr; /* Yetenekler listesi tek sütun */
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr; /* Başarılar tek sütun */
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        gap:16px;
+    }
+
+    .project-card img{
+        height:140px;
     }
 
     .project-content{
@@ -388,37 +483,13 @@ section h2{
     }
 
     .project-content p{
-        font-size:0.9rem;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .projects{
-        grid-template-columns:1fr;
-        gap:12px;
-    }
-
-    .project-card img{
-        height:120px;
-    }
-
-    .project-content{
-        padding:12px;
-    }
-
-    .project-content h3{
-        font-size:0.95rem;
-    }
-
-    .project-content p{
         font-size:0.85rem;
     }
 
     .project-btn{
-        padding:8px 12px;
+        padding:8px 14px;
         font-size:0.85rem;
+        width: 100%; /* Mobilde butonun kolay tıklanması için tam genişlik */
+        text-align: center;
     }
-
 }
