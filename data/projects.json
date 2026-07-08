@@ -6,22 +6,16 @@
         "url": "https://github.com/kullanici/portfolio"
     },
     {
-        "title": "E-Ticaret Projesi",
-        "image": "images/project2.jpg",
-        "description": "Modern e-ticaret arayüzü çalışması.",
-        "url": "https://github.com/kullanici/ecommerce"
-    }
-    ,
-    {
-        "title": "E-Ticaret Projesi",
-        "image": "images/project2.jpg",
-        "description": "Modern e-ticaret arayüzü çalışması.",
-        "url": "https://github.com/kullanici/ecommerce"
+        "title": "AndTransfer",
+        "image": "images/andtransfer.png",
+        "description": "Wifi üzerinden MacOs Dosya Trasfer Uygulaması.",
+        "url": "https://apps.apple.com/us/app/andtransfer/id6763248035"
     },
-      {
-        "title": "Portfolio Sitesi",
-        "image": "images/project1.jpeg",
-        "description": "HTML CSS JavaScript ile geliştirilen kişisel web sitesi.",
-        "url": "https://github.com/kullanici/portfolio"
+    {
+        "title": "AndTransfer",
+        "image": "images/andtransfer.png",
+        "description": "USB üzerinden MacOs Dosya Trasfer Uygulaması.",
+        "url": "https://apps.apple.com/us/app/andtransfer/id6763248035"
     }
+  
 ]
