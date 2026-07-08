@@ -15,7 +15,7 @@
         "title": "AndTransfer",
         "image": "images/andtransfer.png",
         "description": "USB üzerinden MacOs Dosya Trasfer Uygulaması.",
-        "url": "AndTransfer.dmg"
+        "url": "data/AndTransfer.dmg"
     }
   
 ]
