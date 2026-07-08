@@ -2,45 +2,23 @@
     {
         "title": "Flutter ile Uygulama Geliştirme",
         "description": "Kurum: T. C. Milli Eğitim Bakanlığı · 2022-08-01",
-        "url": "https://github.com/kullanici/portfolio"
+        "url": "https://github.com/"
     },
     {
         "title": "App Inventor ile Mobil Programlamaya Giriş",
         "description": "Kurum: ODTÜ (METU) · 2021-07-01",
-        "url": "https://github.com/kullanici/ecommerce"
+        "url": "https://github.com/"
     },
      {
         "title": "Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty",
         "description": "Kurum: Udemy · 2020-09-01",
-        "url": "https://github.com/kullanici/ecommerce"
+        "url": "https://github.com/"
     },
        {
-        "title": "Flutter ile Uygulama Geliştirme",
-        "description": "Kurum: T. C. Milli Eğitim Bakanlığı · 2022-08-01",
-        "url": "https://github.com/kullanici/portfolio"
-    },
-    {
-        "title": "App Inventor ile Mobil Programlamaya Giriş",
-        "description": "Kurum: ODTÜ (METU) · 2021-07-01",
-        "url": "https://github.com/kullanici/ecommerce"
-    },
-     {
-        "title": "Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty",
-        "description": "Kurum: Udemy · 2020-09-01",
-        "url": "https://github.com/kullanici/ecommerce"
-    },   {
-        "title": "Flutter ile Uygulama Geliştirme",
-        "description": "Kurum: T. C. Milli Eğitim Bakanlığı · 2022-08-01",
-        "url": "https://github.com/kullanici/portfolio"
-    },
-    {
-        "title": "App Inventor ile Mobil Programlamaya Giriş",
-        "description": "Kurum: ODTÜ (METU) · 2021-07-01",
-        "url": "https://github.com/kullanici/ecommerce"
-    },
-     {
-        "title": "Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty",
-        "description": "Kurum: Udemy · 2020-09-01",
-        "url": "https://github.com/kullanici/ecommerce"
+        "title": "Algoritma_Programlama_ve_Veri_Yapılarına_Giriş_Sertifika",
+        "description": "Kurum: Bilgi Teknolojileri ve İletişim Kurumu",
+        "url": "images/Algoritma_Programlama_ve_Veri_Yapılarına_Giriş_Sertifika.png"
     }
+    
+    
 ]
