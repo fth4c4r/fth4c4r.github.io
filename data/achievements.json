@@ -2,17 +2,23 @@
     {
         "title": "Flutter ile Uygulama Geliştirme",
         "description": "Kurum: T. C. Milli Eğitim Bakanlığı · 2022-08-01",
-        "url": "https://github.com/"
+        "url": "images/2022000265.jpeg"
     },
     {
         "title": "App Inventor ile Mobil Programlamaya Giriş",
-        "description": "Kurum: ODTÜ (METU) · 2021-07-01",
+        "description": "Kurum: ODTÜ (METU)",
         "url": "images/App Inventor ile Mobil Programlama - 1.jpeg"
     },
      {
         "title": "Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty",
-        "description": "Kurum: Udemy · 2020-09-01",
-        "url": "https://github.com/"
+        "description": "Kurum: Udemy",
+        "url": "images/UC-e21e8105-08da-4de1-aee9-1e826ee8afca.jpg"
+    },
+    ,
+     {
+        "title": "Temel Seviye Etik Hacker Eğitimi",
+        "description": "Kurum: Udemy",
+        "url": "images/UC-98decc65-b352-49b6-8cb8-c3ddb2304eee.jpg"
     },
        {
         "title": "Algoritma_Programlama_ve_Veri_Yapılarına_Giriş_Sertifika",
