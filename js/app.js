@@ -1,3 +1,4 @@
+// PROJELER 
 fetch("data/projects.json")
 .then(response => response.json())
 .then(projects => {
@@ -34,6 +35,7 @@ fetch("data/projects.json")
     console.error(error);
 });
 
+// BELGELER/SERTİFİKALAR 
 fetch("data/achievements.json")
 .then(response => response.json())
 .then(achievements => {
@@ -66,6 +68,8 @@ fetch("data/achievements.json")
     console.error(error);
 });
 
+
+// YETENEKLER 
 fetch("data/skills.json")
 .then(response => response.json())
 .then(skills => {
